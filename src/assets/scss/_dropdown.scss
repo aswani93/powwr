@@ -1,0 +1,21 @@
+
+.primaryButton {
+    background-color: $buttonPrimary !important; 
+    color: $white !important;
+  }
+  .mdc-button__label {
+    display: flex;
+  }
+  mat-menu {
+    color: $white;
+    button {
+      color: $white; 
+      background-color: transparent; 
+      &:hover {
+        background-color: $hoverBgColor; 
+      }
+    }
+  }
+  mat-icon {
+    color: $white;
+  }

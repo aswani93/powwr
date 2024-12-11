@@ -1,0 +1,12 @@
+<div class="row m-b-12">
+  <div class="col-12">
+    <h2>{{cardsData.title}}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    @for(card of cardsData.steps; track card) {
+      <app-card [card]="card"></app-card>
+      }
+</div>
+</div>

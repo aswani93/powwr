@@ -1,0 +1,9 @@
+<button mat-button [matMenuTriggerFor]="menu"  class="primaryButton">
+  {{label}}
+    <span class="d-inline-block"><mat-icon class="d-flex  align-items-center">keyboard_arrow_down</mat-icon>  </span>
+</button>
+  <mat-menu #menu="matMenu">
+  @for(opt of options; track opt){
+    <button mat-menu-item (click)="onButtonClick(opt)">{{opt}}</button>
+  }
+</mat-menu>

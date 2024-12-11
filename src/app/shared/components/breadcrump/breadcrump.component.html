@@ -1,0 +1,13 @@
+@if(breadcrumbs.length > 0) {
+<div class="d-flex">
+    <i-tabler class="arrow-icon px-4" name="arrow-narrow-left"></i-tabler>
+    @for (breadcrumb of breadcrumbs; track breadcrumb; let i = $index){
+    @if(i===0) {<i-tabler class="home-icon home" name="home"></i-tabler>}
+    <a [class.home]="i === 0 " class="breadcrump-label me-4" [routerLink]="breadcrumb.url">
+        {{ breadcrumb.label }}
+        @if(i!==breadcrumbs.length-1) {<span>.</span>}
+    </a>
+   
+    }
+</div>
+}

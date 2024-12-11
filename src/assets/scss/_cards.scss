@@ -1,0 +1,55 @@
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  mat-card-header {
+    padding: 15px !important;
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      width:100%;
+
+      .card-status {
+        display: flex;
+        align-items: center;
+        color: $white;
+        background-color: $gray-500 !important;
+        width: 100px;
+        border-radius: 5px;
+
+        .status-icon {
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          margin-left: 6px;
+          color: $white; 
+        }
+      }
+
+      .card-title {
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 600;
+        color: $textPrimary;
+        margin: 0;
+      }
+
+      .card-description {
+        font-family: $font-family;
+        font-size: 14px;
+        color: $gray-100;
+        margin: 0;
+      }
+    }
+
+    .arrow-icon {
+      font-size: 22px;
+      color: $gray-100;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+     
+    }
+  }
+}
